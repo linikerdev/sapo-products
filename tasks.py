@@ -32,11 +32,8 @@ def seed_things():
 
 def seed_thing(cls):
     session = next(get_db())
-    things = [
-        {"name": "Pizza Slicer", "purpose": "Cut delicious pizza"},
-        {"name": "Rolling Pin", "purpose": "Roll delicious pizza"},
-        {"name": "Pizza Oven", "purpose": "Bake delicious pizza"},
-    ]
+    things = []
+  
     session.bulk_insert_mappings(cls, things)
     session.commit()
 

@@ -1,0 +1,41 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:fastapi-sapo}/app/app-dev.db",
+            "name": "local"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:fastapi-sapo}/app/app-dev.db",
+            "name": "local"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:fastapi-sapo}/app/app-dev.db",
+            "name": "localhost"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "localhost",
+            "database": "${workspaceFolder:fastapi-sapo}/app/app-dev.db"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "local",
+            "database": "${workspaceFolder:fastapi-sapo}/app/app-dev.db"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "xxx",
+            "database": "${workspaceFolder:fastapi-sapo}/app/app-dev.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

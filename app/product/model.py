@@ -3,7 +3,6 @@ from app.db import Base
 
 from .schema import ProductSchema
 
-
 class Product(Base):  # type: ignore
 
     __tablename__ = "product"
