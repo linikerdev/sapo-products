@@ -1,4 +1,4 @@
-A simple example of using Fast API in Python.
+The goal of this project is to provide an API with products to use on a front end.
 
 ## Preconditions:
 
@@ -11,13 +11,20 @@ A simple example of using Fast API in Python.
 pip install -r requirements.txt
 ```
 
+### import the documents from type txt into the DataBase (repository).
+
+```
+invoke seed-db 
+```
 ### Run server
 
 ```
-uvicorn app.main:app --reload
+python wsgy.py
 ```
 ## API documentation (provided by Swagger UI)
 
 ```
 http://127.0.0.1:8000/docs
+
 ```
+
