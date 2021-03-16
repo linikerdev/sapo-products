@@ -1,5 +1,5 @@
 from typing import List
-from sqlalchemy.sql import func
+from sqlalchemy.sql import func, desc
 from app.db import Session, get_db
 from .schema import ProductSchema
 from .model import Product
@@ -11,7 +11,7 @@ router = APIRouter()
 
 @router.get("/", response_model=List[ProductSchema])
 def get_products(session: Session = Depends(get_db)) -> List[Product]:
-    return session.query(Product).all()
+    return session.query(Product).order_by(Product.name).all()
  
  
 @router.get("/", response_model=List[ProductSchema])

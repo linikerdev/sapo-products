@@ -23,6 +23,7 @@ class DevelopmentConfig(Settings):
     TESTING: bool = False
     SQLALCHEMY_DATABASE_URL: str = "sqlite:///{0}/app-dev.db".format(basedir)
 
+
 def get_config(config):
     return config_by_name[config]
 
