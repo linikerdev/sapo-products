@@ -1,5 +1,21 @@
 The goal of this project is to provide an API with products to use on a front end.
 
+## Dependencies:
+    - click
+    - fastapi
+    - h11
+    - invoke
+    - numpy
+    - pandas
+    - pydantic
+    - python-dateutil
+    - pytz
+    - six
+    - SQLAlchemy
+    - starlette
+    - typing-extensions
+    - uvicorn
+
 ## Preconditions:
 
 - Python 3
