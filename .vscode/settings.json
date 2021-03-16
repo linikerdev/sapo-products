@@ -37,5 +37,6 @@
             "database": "${workspaceFolder:fastapi-sapo}/app/app-dev.db"
         }
     ],
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "python.pythonPath": "/Users/liniker/envs/fastapi_sapo/bin/python"
 }

@@ -13,6 +13,7 @@ class Product(Base):  # type: ignore
     proteinas = Column(Integer())
     carboidratos = Column(Integer())
     gorduras = Column(Integer())
+    
     def update(self, changes: ProductSchema):
         for key, val in changes.dict().items():
             setattr(self, key, val)

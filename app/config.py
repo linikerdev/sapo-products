@@ -3,8 +3,9 @@ from typing import List, Type
 
 from pydantic import BaseSettings
 
-directoryDb = "/data_db"
+source_path = os.path.join( os.path.dirname( __file__ ), '../alimentos/' )
 basedir = os.path.abspath(os.path.dirname(__file__))
+
 
 class Settings(BaseSettings):
     CONFIG_NAME: str = "base"

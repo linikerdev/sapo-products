@@ -23,9 +23,6 @@ Base.metadata.bind = engine
 
 
 def get_db():
-    """
-    Generator function for dependency injection to fetch a new sesesion on a new request
-    """
     db = Session()
     try:
         yield db
